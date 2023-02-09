@@ -1,0 +1,12 @@
+.nav {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 5px;
+    font-weight: 800;
+}
