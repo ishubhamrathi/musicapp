@@ -3,7 +3,19 @@ const reducer = (state, action) =>{
         case "GET_SONGS" : 
             return {
                 ...state,
-                hits : action.payload,
+                hits : action.payload.hits,
+                isLoading : false
+
+            }
+        case "SET_LOADING" :
+            return {
+                ...state,
+                isLoading : true
+            }
+        case "UPDATE_LINK" :
+            return {
+                ...state,
+                songLink : action.payload
             }
     }
     return state;

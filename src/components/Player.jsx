@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
+import { useGlobalContext } from "../context";
+
 
 const Player = () =>{ 
+    const {songLink} = useGlobalContext();
 
     return (
         <>
         <ReactAudioPlayer
-                src="data"
+                src={songLink}
                 autoPlay
                 controls
             />
