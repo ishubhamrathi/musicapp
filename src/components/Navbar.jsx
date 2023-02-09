@@ -5,7 +5,7 @@ const Navbar = () =>{
     return (
         <>
             <div className="nav">
-                Music
+                Music App
             </div>
         </>
     )
