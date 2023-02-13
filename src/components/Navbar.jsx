@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css"
-
 const Navbar = () =>{
     return (
         <>
+            
             <div className="nav">
-                Music App
+                <div className="nav-title">muxic</div>
             </div>
         </>
     )
