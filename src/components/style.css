@@ -31,10 +31,13 @@ body{
     width : calc(100% - 290px);
     position: relative;
     left:290px;
+    margin-bottom: 110px;
+    
     /* height: 100vh; */
     /* left: 290px; */
     /* overflow: hidden; */
 }
+
 /* logo */
 .logo{
     display: flex;
@@ -192,22 +195,28 @@ body{
 }
 .songLists {
     display: flex;
+    /* justify-content: center; */
+
+    float: left;
     flex-wrap: wrap;
-    justify-content: center;
+    /* flex-grow: 1; */
 
 }
 
 .songDetail{
+    flex-grow: 1;
     background-color: #181919;
     color: white;
     margin: 10px;
     border-radius: 10px;
     width: 150px;
+    max-width: 200px;
     padding: 10px;
-    cursor: pointer;
 }
 .songDetail:hover{
-    opacity: 0.6;
+    opacity: 0.8;
+    /* background-color: #101111; */
+
 }
 .songTitle{
     font-size: 16px;
@@ -217,8 +226,11 @@ body{
     white-space: nowrap;
 }
 .imgIcon {
-    width: 130px;
+    /* width: 130px; */
+    width: 100%;
     border-radius: 5px;
+    cursor: pointer;
+    
 
 }
 .artistName{
@@ -228,15 +240,18 @@ body{
     text-overflow: ellipsis;
     font-size: 13px;
 }
-
-.playBtn{
-    background-color: greenyellow;
-    font-weight: 800;
-    border : none;
-    border-radius: 10px;
-
+.download-link{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 30px;
+    /* float: right; */
 }
 
+.download-btn{
+    color: white;
+    cursor: pointer;
+}
 /* is loading  start*/
 @keyframes spinner {
     0% {
@@ -303,7 +318,7 @@ body{
 .queue{
     color: white;
 }
-@media only screen and (max-width : 610px){
+@media only screen and (max-width : 690px){
 
     .left-sidebar{
         display: none;
@@ -327,14 +342,15 @@ body{
 
 @media only screen and (max-width: 400px){
     
-    .songDetail{
+    /* .songDetail{
         background-color: #181919;
         color: white;
         margin: 10px;
         border-radius: 10px;
-        width: 120px;
+        width: 110px;
+        max-width: 120px;
         padding: 10px;
-    }
+    } */
 
     .songTitle{
         font-size: 16px;
@@ -344,9 +360,7 @@ body{
         white-space: nowrap;
     }
     .imgIcon {
-        width: 100px;
         border-radius: 5px;
-
     }
     .artistName{
         color: rgb(134,135,135);

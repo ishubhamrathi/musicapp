@@ -89,6 +89,7 @@ const showMenu = () =>{
 const showMixes = () =>{
     dispatch({type: "SHOW_MIXES"});
 }
+
 //useEffect
     useEffect(()=>{
         fetchApiData(`${API}query=${state.query}&page=${state.page}&limit=${state.limit}`);

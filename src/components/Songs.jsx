@@ -4,8 +4,6 @@ import "./style.css"
 
 const Songs = () =>{
     const {hits, isLoading, playMusic, heading} = useGlobalContext();
-
-    
     if (isLoading){
         return <>
             <div className="spinner-container">
@@ -21,11 +19,11 @@ const Songs = () =>{
             <div className="subHeading">{heading}</div>
             <div className="songLists">
                 {hits.map((currSong)=>{
-                    const {name , image, downloadUrl, primaryArtists, language, year, label} = currSong; 
+                    const {name , image, downloadUrl, primaryArtists} = currSong; 
                     return (
                         <>
                         <div className="songDetail">
-                            <div className="container" onClick={()=>playMusic(downloadUrl,language)}>
+                            <div className="container" onClick={()=>playMusic(downloadUrl)}>
                                 <div className="col">
                                     <img className="imgIcon" src={image[1].link}/>
                                 </div>
