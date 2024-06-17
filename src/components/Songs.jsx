@@ -25,7 +25,7 @@ const Songs = () =>{
                         <div className="songDetail">
                             <div className="container" onClick={()=>playMusic(downloadUrl)}>
                                 <div className="col">
-                                    <img className="imgIcon" src={image[2].link}/>
+                                    <img className="imgIcon" src={image[2].url}/>
                                 </div>
                                 <div className="col">
                                     <div className="songTitle">{title}</div>
