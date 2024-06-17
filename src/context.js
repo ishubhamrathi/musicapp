@@ -2,7 +2,7 @@ import React, { useContext, useReducer, useEffect } from "react";
 import reducer from "./reducer";
 const AppContext = React.createContext();
 
-const API = "https://saavn.me/search/songs?";
+const API = "https://saavn.dev/api/search?";
 // const API = "https://hn.algolia.com/api/v1/search?"
 
 const initialState = {
