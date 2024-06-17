@@ -2,12 +2,12 @@ import React, { useContext, useReducer, useEffect } from "react";
 import reducer from "./reducer";
 const AppContext = React.createContext();
 
-const API = "https://saavn.dev/api/search?";
-// const API = "https://hn.algolia.com/api/v1/search?"
+const API = "https://saavn.dev/api/search/songs?";
+// https://saavn.dev/api/search?
 
 const initialState = {
     isLoading : true,
-    query : "latest english" ,
+    query : "latest hindi" ,
     nbpage : 1,
     page : 1,
     hits : [],
@@ -45,7 +45,7 @@ const initialState = {
     }
 //play music
     const playMusic = (link) =>{
-        dispatch({type:"UPDATE_LINK", payload : link[4].link});
+        dispatch({type:"UPDATE_LINK", payload : link[4].url});
     };
 //search music
     const searchSong = (searchQuery)=>{
