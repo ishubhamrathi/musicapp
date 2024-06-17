@@ -19,16 +19,16 @@ const Songs = () =>{
             <div className="subHeading">{heading}</div>
             <div className="songLists">
                 {hits.map((currSong)=>{
-                    const {name , image, downloadUrl, primaryArtists} = currSong; 
+                    const {title, image, downloadUrl, primaryArtists} = currSong; 
                     return (
                         <>
                         <div className="songDetail">
                             <div className="container" onClick={()=>playMusic(downloadUrl)}>
                                 <div className="col">
-                                    <img className="imgIcon" src={image[1].link}/>
+                                    <img className="imgIcon" src={image[2].link}/>
                                 </div>
                                 <div className="col">
-                                    <div className="songTitle">{name}</div>
+                                    <div className="songTitle">{title}</div>
                                 </div>
                                 <div className="col">
                                     <div className="artistName">{primaryArtists}</div>
